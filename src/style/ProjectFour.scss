@@ -1,0 +1,182 @@
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: montserrat, helvetica neue, Arial, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+}
+
+#project-4 {
+    width: 100%;
+
+    .container {
+        max-width: 1400px;
+        padding: 80px 0 0;
+        background-color: #dddadae5;
+
+        .header {
+            width: 70%;
+            margin: 0 auto;
+            text-align: center;
+
+            .text-muted {
+                font-size: .9em;
+                color: #6c757d !important;
+            }
+
+            .title {
+                font-size: 2.5em;
+                font-weight: 700;
+                color: #2c2c2c;
+                margin: 30px 0;
+            }
+        }
+
+        .body {
+            display: flex;
+            flex-wrap: wrap;
+
+            .card-1 {
+                background-image: linear-gradient(0, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/project4-card-1.jpg);
+            }
+
+            .card-2 {
+                background-image: linear-gradient(0, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/project4-card-2.jpg);
+            }
+
+            .card-3 {
+                background-image: linear-gradient(0, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/project4-card-3.jpg);
+                .card-fashion{
+                    float: right;
+                    .card-footer{
+                        margin-top: 35px;
+                    }
+                }
+            }
+
+            .card-4 {
+                background-image: linear-gradient(0, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/project4-card-4.jpg);
+                .card-footer{
+                    margin-top: 62px;
+                }
+            }
+
+            .card-type-1 {
+                width: 50%;
+                height: 500px !important;
+                background-size: cover;
+                background-position: 50%;
+                position: relative;
+                .card-title {
+                    position: absolute;
+                    bottom: 40px;
+                    margin-bottom: 30px;
+                    padding: 0 80px;
+
+                    a {
+                        text-decoration: none;
+                        font-size: 36px;
+                        font-weight: 400;
+                        line-height: 1.2em;
+                        color: #ffffffde;
+                    }
+
+                    a:hover {
+                        border-bottom: 2px solid #fff;
+                        transition: all .15s ease 0s;
+                    }
+                }
+
+                .card-footer {
+                    position: absolute;
+                    bottom: 0;
+                    left: -30px;
+                    color: #fff;
+                    font-size: 14px;
+                    margin-bottom: 20px;
+                    margin-left: 109px;
+
+                    .icon {
+                        font-size: 18px;
+                        color: grey;
+                    }
+                }
+            }
+
+            .card-type-2 {
+                width: 50%;
+                height: 500px !important;
+                background-size: cover;
+                background-position: 50%;
+
+                .card-fashion {
+                    width: 50%;
+                    height: 100%;
+                    background-color: #fff;
+                    position: relative;
+                    .card-title {
+                        position: absolute;
+                        text-align: center;
+                        padding-top: 180px;
+
+                        a {
+                            text-decoration: none;
+
+                            h4 {
+                                font-size: 1.5em;
+                                font-weight: 400;
+                                line-height: 1.45em;
+                                color: #4a4a4a;
+                                padding: 0 15px;
+                            }
+                        }
+                    }
+                    .card-footer{
+                        position: absolute;
+                        bottom: 20px;
+                        left: 30px;
+                        font-size: 14px;
+                        color: black;
+                        .icon{
+                            font-size: 18px;
+                            color: grey;
+                        }
+                    }
+                }
+            }
+        }
+        .footer{
+            height: 80px;
+            background-color: #fff;
+        }
+    }
+}
+@media (max-width: 770px){
+    #project-4{
+        .container{
+            .header{
+                width: 80%;
+            }
+            .body{
+                flex-direction: column;
+                .card-type-1{
+                    width: 100%;
+                }
+                .card-type-2{
+                    width: 100%;
+                    .card-fashion{
+                        .card-footer{
+                            width: 70%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

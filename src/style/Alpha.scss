@@ -1,0 +1,168 @@
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: montserrat, helvetica neue, Arial, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+}
+
+#Testimonial_1 {
+    width: 100%;
+    background-image: linear-gradient(0, rgba(0, 0, 0, .5), rgba(0, 0, 0, .6)), url(../img/testimonial.jpg);
+    background-size: cover;
+    background-position: 50%;
+    position: relative;
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+
+        .header {
+            width: 50%;
+            text-align: center;
+            margin: 0 auto 40px;
+            padding: 80px 10px 0;
+
+            .title {
+                font-size: 2.5em;
+                font-weight: 700;
+                color: #fff;
+                margin-bottom: 30px;
+            }
+
+            .description {
+                font-size: 1.3em;
+                font-weight: 300;
+                line-height: 1.45em;
+                color: hsla(0, 0%, 100%, 0.541);
+            }
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 80px;
+
+            .wrapper-card {
+                margin-top: 80px;
+                padding: 0 10px;
+
+                .card {
+                    width: 380px;
+                    height: 360px;
+                    border-radius: 10px;
+                    padding: 0 15px;
+                    background-color: #fff;
+
+                    .card-img {
+                        width: 100px;
+                        height: 100px;
+                        position: relative;
+                        top: -50px;
+                        left: 120px;
+
+                        img {
+                            border-radius: 50%;
+                        }
+                    }
+
+                    .card-describe {
+                        font-size: 1.2em;
+                        font-weight: 300;
+                        line-height: 1.5em;
+                        color: #9a9a9a;
+                        padding: 0 20px 20px;
+                        text-align: center;
+                    }
+
+                    .card-icon {
+                        text-align: center;
+                        margin-bottom: 10px;
+
+                        .icon {
+                            width: 40px;
+                            height: 40px;
+                            color: #2ca8ff;
+                        }
+                    }
+
+                    .card-title {
+                        font-size: 21px;
+                        font-weight: 400;
+                        color: #2c2c2c;
+                        text-align: center;
+                        margin-bottom: 10px;
+                    }
+
+                    .category {
+                        font-size: 16px;
+                        font-weight: 700;
+                        color: #9a9a9a;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 770px) and (max-width: 1200px) {
+    #Testimonial_1 {
+
+        .container {
+
+            .cards {
+                .wrapper-card {
+
+                    .card {
+                        width: 100%;
+                        height: 60vh;
+
+                        .card-img{
+                            left: 0;
+                            margin: 0 auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 770px) {
+    #Testimonial_1 {
+
+        .container {
+
+            .header {
+                width: 80%;
+            }
+
+            .cards {
+                width: 100%;
+                flex-direction: column;
+                margin-left: 17px;
+
+                .wrapper-card {
+                    .card {
+                        width: 95%;
+
+                        .card-img {
+                            top: -50px;
+                            left: 0;
+                            margin: 0 auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

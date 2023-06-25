@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
-
+import './style/App.scss';
+import ProjectOne from './components/ProjectOne';
+import ProjectTwo from './components/ProjectTwo';
+import ProjectThree from './components/ProjectThree';
+import ProjectFour from './components/ProjectFour';
+import ProjectFive from './components/ProjectFive';
+import PriceOne from './components/PriceOne';
+import PriceTwo from './components/PriceTwo';
+import PriceThree from './components/PriceThree';
+import PriceFour from './components/PriceFour';
+import PriceFive from './components/PriceFive';
+import Contact from './components/Contact';
+import TestimonialsTwo from './components/TestimonialsTwo';
+import Testimonials from './components/TestimonialsOne';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ProjectOne />
+      <ProjectTwo />
+      <ProjectThree />
+      <ProjectFour />
+      <ProjectFive />
+      <PriceOne />
+      <PriceTwo />
+      <PriceThree />
+      <PriceFour />
+      <PriceFive />
+      <Testimonials />
+      <TestimonialsTwo />
+      <Contact />
     </div>
   );
 }

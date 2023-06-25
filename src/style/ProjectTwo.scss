@@ -1,0 +1,115 @@
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: montserrat, helvetica neue, Arial, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+}
+
+#project-2 {
+    width: 100%;
+
+    .container {
+        max-width: 1200px;
+        padding: 80px 15px;
+        margin: 0 auto;
+
+        .header {
+            width: 70%;
+            margin: 0 auto;
+            text-align: center;
+
+            .text-muted {
+                font-size: .9em;
+                font-weight: 700;
+                color: #6c757d !important;
+            }
+
+            .title {
+                font-size: 40px;
+                font-weight: 700;
+                color: #2c2c2c;
+                padding-top: 30px;
+                margin-bottom: 20px;
+            }
+
+            .describe {
+                font-size: 1.3em;
+                font-weight: 300;
+                line-height: 1.4em;
+                color: #b9b6b6;
+                padding: 0 15px;
+            }
+        }
+
+        .body {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 80px 0;
+
+            .card {
+                width: 30%;
+                text-align: center;
+
+                a {
+                    .card-img {
+                        img {
+                            border-radius: 5px;
+                            box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .3);
+                        }
+                    }
+                }
+
+                a {
+                    text-decoration: none;
+
+                    .card-title {
+                        font-size: 1.3em;
+                        font-weight: 300;
+                        color: #2c2c2cce;
+                        margin: 30px 0 5px;
+                    }
+                }
+
+                .category {
+                    font-size: .9em;
+                    font-weight: 700;
+                    color: #2ca8ff !important;
+                    margin-bottom: 25px;
+                }
+
+                .card-describe {
+                    font-size: 1.1em;
+                    font-weight: 300;
+                    line-height: 1.6em;
+                    color: #9a9a9acb;
+                    width: 98%;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 770px){
+    #project-2{
+        .container{
+            .header{
+                width: 80%;
+            }
+            .body{
+                flex-direction: column;
+
+                .card{
+                    width: 75%;
+                    margin: 0 auto 30px;
+                }
+            }
+        }
+    }
+}

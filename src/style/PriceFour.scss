@@ -1,0 +1,249 @@
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: montserrat, helvetica neue, Arial, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+}
+
+#pricing-4 {
+    width: 100%;
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 80px 15px;
+
+        .header {
+            width: 50%;
+            text-align: center;
+            margin: 0 auto;
+            padding-top: 30px;
+
+            .title {
+                font-size: 2.5em;
+                font-weight: 700;
+                color: #2c2c2c;
+            }
+
+            .description {
+                font-size: 1.5em;
+                font-weight: 300;
+                line-height: 1.4em;
+                color: #9a9a9a;
+                margin: 30px 0 15px;
+            }
+        }
+
+        .wrapper-card {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 70px;
+            .error {
+                width: 30%;
+                padding: 20px;
+                text-align: center;
+
+                .category {
+                    font-size: 1.3em;
+                    font-weight: 400;
+                    color: #9a9a9a;
+                }
+
+                .icon {
+                    width: 90px;
+                    height: 90px;
+                    margin: 30px auto;
+                    text-align: center;
+                    border-radius: 50%;
+                    box-shadow: 0 9px 30px -5px #ff3636;
+
+                    .icon-error {
+                        width: 30px;
+                        height: 30px;
+                        color: #ff3636;
+                        padding-top: 25px;
+                    }
+                }
+                .price{
+                    font-size: 25px;
+                    font-weight: 400;
+                    color: #2c2c2c;
+                    margin-bottom: 20px;
+                }
+                p {
+                    width: 70%;
+                    margin: 0 auto;
+                    color: #888;
+                    text-align: center;
+                    padding: 12px 0;
+                    border-bottom: 1px solid hsla(0, 0%, 53.3%, .3);
+                }
+                .dataBase {
+                    border: none;
+                }
+                .btn {
+                    width: 110px;
+                    height: 39px;
+                    color: #fff;
+                    border: none;
+                    border-radius: 30px;
+                    background-color: #ff3636;
+                    margin: 20px 0;
+                    cursor: pointer;
+                }
+            }
+            .info {
+                width: 30%;
+                padding: 20px;
+                text-align: center;
+                background-color: #2ca8ff;
+                border-radius: 5px;
+                .category {
+                    font-size: 1.3em;
+                    font-weight: 400;
+                    color: #fff;
+                }
+
+                .icon {
+                    width: 90px;
+                    height: 90px;
+                    margin: 30px auto;
+                    text-align: center;
+                    border-radius: 50%;
+                    background-color: #fff;
+                    box-shadow: 0 9px 30px -5px #2ca8ff;
+
+                    .icon-info {
+                        width: 30px;
+                        height: 30px;
+                        color: #2ca8ff;
+                        padding-top: 25px;
+                    }
+                }
+                .price{
+                    font-size: 25px;
+                    font-weight: 400;
+                    color: #fff;
+                    margin-bottom: 20px;
+                }
+                p {
+                    width: 70%;
+                    margin: 0 auto;
+                    color: #fff;
+                    text-align: center;
+                    padding: 12px 0;
+                    border-bottom: 1px solid hsla(0, 0%, 50%, 0.3);
+                }
+                .dataBase {
+                    border: none;
+                }
+                .btn {
+                    width: 110px;
+                    height: 39px;
+                    color: #2ca8ff;
+                    border: none;
+                    border-radius: 30px;
+                    background-color: #ffffff75;
+                    margin: 20px 0;
+                    cursor: pointer;
+                }
+            }
+            .warn {
+                width: 30%;
+                padding: 20px;
+                text-align: center;
+
+                .category {
+                    font-size: 1.3em;
+                    font-weight: 400;
+                    color: #9a9a9a;
+                }
+
+                .icon {
+                    width: 90px;
+                    height: 90px;
+                    margin: 30px auto;
+                    text-align: center;
+                    border-radius: 50%;
+                    box-shadow: 0 9px 30px -5px #ffb236;
+
+                    .icon-warn {
+                        width: 30px;
+                        height: 30px;
+                        color: #ffb236;
+                        padding-top: 25px;
+                    }
+                }
+                .price{
+                    font-size: 25px;
+                    font-weight: 400;
+                    color: #2c2c2c;
+                    margin-bottom: 20px;
+                }
+                p {
+                    width: 70%;
+                    margin: 0 auto;
+                    color: #888;
+                    text-align: center;
+                    padding: 12px 0;
+                    border-bottom: 1px solid hsla(0, 0%, 53.3%, .3);
+                }
+                .dataBase {
+                    border: none;
+                }
+                .btn {
+                    width: 110px;
+                    height: 39px;
+                    color: #fff;
+                    border: none;
+                    border-radius: 30px;
+                    background-color: #ffb236;
+                    cursor: pointer;
+                    margin: 20px 0;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 770px){
+    #pricing-4{
+
+        .container{
+
+            .header{
+                width: 75%;
+            }
+
+            .wrapper-card{
+                flex-direction: column;
+                align-items: center;
+                .error{
+                    width: 75%;
+                    p{
+                        width: 60%;
+                    }
+                }
+                .info{
+                    width: 75%;
+                    p{
+                        width: 65%;
+                    }
+                }
+                .warn{
+                    width: 75%;
+                    p{
+                        width: 60%;
+                    }
+                }
+            }
+        }
+    }
+}
