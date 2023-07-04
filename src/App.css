@@ -26,81 +26,6 @@ margin
 /*------------------------
 	base class definition
 -------------------------*/
-.now-ui-icons {
-  display: inline-block;
-  font: normal normal normal 14px/1 "Nucleo Outline";
-  font-size: 16px;
-  speak: none;
-  text-transform: none;
-  /* Better Font Rendering */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.now-ui-icons.business_chart-pie-36:before {
-  content: "\ea1f";
-}
-
-.now-ui-icons.ui-2_chat-round:before {
-  content: "\ea20";
-}
-
-.now-ui-icons.design-2_ruler-pencil:before {
-  content: "\ea48";
-}
-
-.now-ui-icons.files_paper:before {
-  content: "\ea43";
-}
-
-.now-ui-icons.ui-2_settings-90:before {
-  content: "\ea4b";
-}
-
-.now-ui-icons.shopping_box:before {
-  content: "\ea11";
-}
-
-.now-ui-icons.arrows-1_minimal-left:before {
-  content: "\ea3a";
-}
-
-.now-ui-icons.arrows-1_minimal-right:before {
-  content: "\ea3b";
-}
-
-.now-ui-icons.users_single-02:before {
-  content: "\ea51";
-}
-
-.now-ui-icons.business_chart-bar-32:before {
-  content: "\ea1e";
-}
-
-.now-ui-icons.arrows-1_refresh-69:before {
-  content: "\ea44";
-}
-
-.now-ui-icons.objects_globe:before {
-  content: "\ea2f";
-}
-
-.now-ui-icons.education_atom:before {
-  content: "\ea0c";
-}
-
-.now-ui-icons.tech_watch-time:before {
-  content: "\ea62";
-}
-
-.now-ui-icons.files_single-copy-04:before {
-  content: "\ea52";
-}
-
-.now-ui-icons.arrows-1_share-66:before {
-  content: "\ea4c";
-}
-
 .nav-bar-section > .container-fluid > .container {
   display: flex;
   justify-content: flex-end;
@@ -314,17 +239,12 @@ margin
   color: #ffffff;
 }
 
-.navbar .navbar-nav .nav-link:not(.dropdown-btn) i.fab,
-.navbar .navbar-nav .nav-link:not(.dropdown-btn) i.now-ui-icons {
+.navbar .navbar-nav .nav-link:not(.dropdown-btn) svg {
   font-size: 18px;
   position: relative;
   top: 3px;
   text-align: center;
   width: 21px;
-}
-.navbar .navbar-nav .nav-link:not(.dropdown-btn) i.now-ui-icons {
-  top: 4px;
-  font-size: 16px;
 }
 
 .navbar-nav .nav-item:not(:last-child) {
@@ -536,7 +456,7 @@ h4.description-2 {
   top: -8px;
 }
 
-.info.info-hover .icon .now-ui-icons {
+.info.info-hover .icon {
   font-size: 42px;
 }
 
@@ -552,6 +472,9 @@ h4.description-2 {
   font-size: 0.7142em;
   background-color: #fff;
   position: relative;
+}
+.info .icon.icon-circle svg {
+  font-size: 42px;
 }
 .icon.icon-danger {
   color: #ff3636;

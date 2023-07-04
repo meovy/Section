@@ -1,3 +1,6 @@
+import { faReadme } from "@fortawesome/free-brands-svg-icons";
+import { faArrowUpFromBracket } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button } from "reactstrap";
 
 export default function Action() {
@@ -8,13 +11,13 @@ export default function Action() {
         href="#readmore"
         color="info"
         size="lg">
-        <i className="now-ui-icons files_single-copy-04"></i> Read More..
+        <FontAwesomeIcon icon={faReadme} /> Read More..
       </Button>
       <Button
         href="#subscribe"
         color="info"
         size="lg">
-        <i className="now-ui-icons arrows-1_share-66"></i> Subscribe
+        <FontAwesomeIcon icon={faArrowUpFromBracket}/> Subscribe
       </Button>
     </div>
   );

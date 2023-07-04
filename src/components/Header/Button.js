@@ -1,4 +1,10 @@
 import { Button } from "reactstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebookSquare,
+  faGetPocket,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 
 export default function Buttons() {
   return (
@@ -9,7 +15,7 @@ export default function Buttons() {
         href="#pablo"
         size="lg"
         onClick={(e) => e.preventDefault()}>
-        <i className="fab fa-facebook-square"></i>
+        <FontAwesomeIcon icon={faFacebookSquare} />
       </Button>
       <Button
         className="btn-icon"
@@ -17,7 +23,7 @@ export default function Buttons() {
         href="#pablo"
         size="lg"
         onClick={(e) => e.preventDefault()}>
-        <i className="fab fa-twitter"></i>
+        <FontAwesomeIcon icon={faTwitter} />
       </Button>
       <Button
         className="btn-icon"
@@ -25,7 +31,7 @@ export default function Buttons() {
         href="#pablo"
         size="lg"
         onClick={(e) => e.preventDefault()}>
-        <i className="fab fa-get-pocket"></i>
+        <FontAwesomeIcon icon={faGetPocket} />
       </Button>
       <Button
         className="mr-3"

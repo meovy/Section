@@ -1,3 +1,7 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faComment } from "@fortawesome/free-regular-svg-icons";
+import { faChartPie, faPencilRuler, faUser, faChartSimple, faArrowsRotate } from "@fortawesome/free-solid-svg-icons";
+
 export const list = [
     {
       id: 1,
@@ -7,7 +11,7 @@ export const list = [
         {
           id: 1,
           title: "Social Conversations",
-          icon: "ui-2_chat-round",
+          icon: <FontAwesomeIcon icon={faComment} flip="horizontal" />,
           iconColor: "icon-info",
           iconCircle: false,
           description: `Gain access to the demographics, psychographics, and location of unique people.`,
@@ -15,7 +19,7 @@ export const list = [
         {
           id: 2,
           title: "Analyze Performance",
-          icon: "business_chart-pie-36",
+          icon: <FontAwesomeIcon icon={faChartPie} />,
           iconColor: "icon-success",
           iconCircle: false,
           description: `Unify data from Facebook, Instagram, Twitter, LinkedIn, and Youtube to gain rich insights.`,
@@ -23,7 +27,7 @@ export const list = [
         {
           id: 3,
           title: "Measure Conversions",
-          icon: "design-2_ruler-pencil",
+          icon: <FontAwesomeIcon icon={faPencilRuler} />,
           iconColor: "icon-warning",
           iconCircle: false,
           description: `Track actions taken on your website, understand the impact on your bottom line.`,
@@ -39,7 +43,7 @@ export const list = [
         {
           id: 1,
           title: "Work With Any Team",
-          icon: "users_single-02",
+          icon: <FontAwesomeIcon icon={faUser} />,
           iconColor: "icon-info",
           iconCircle: true,
           description: `Whether it's for work or even the next family vacation, Trello helps your team.`,
@@ -47,7 +51,7 @@ export const list = [
         {
           id: 2,
           title: "A Productivity Platform",
-          icon: "business_chart-bar-32",
+          icon: <FontAwesomeIcon icon={faChartSimple} />,
           iconColor: "icon-danger",
           iconCircle: true,
           description: `Integrate the apps your team already uses directly into your workflow.`,
@@ -55,7 +59,7 @@ export const list = [
         {
           id: 3,
           title: "Always In Sync",
-          icon: "arrows-1_refresh-69",
+          icon: <FontAwesomeIcon icon={faArrowsRotate} />,
           iconColor: "icon-warning",
           iconCircle: true,
           description: `No matter where you are, Trello stays in sync across all of your devices.`,

@@ -1,11 +1,18 @@
+import {
+  faFacebookSquare,
+  faGooglePlus,
+  faInstagram,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button } from "reactstrap";
 
 export default function Connect() {
   const icons = [
-    "fa-twitter",
-    "fa-facebook-square",
-    "fa-google-plus",
-    "fa-instagram",
+    <FontAwesomeIcon icon={faTwitter} />,
+    <FontAwesomeIcon icon={faFacebookSquare} />,
+    <FontAwesomeIcon icon={faGooglePlus} />,
+    <FontAwesomeIcon icon={faInstagram} />,
   ];
 
   return (
@@ -18,7 +25,7 @@ export default function Connect() {
             className="btn-icon btn-neutral btn-round mt-2 mr-1"
             color="danger"
             href="#twitter">
-            <i className={`fab ${icon}`}></i>
+            {icon}
           </Button>
         ))}
       </div>

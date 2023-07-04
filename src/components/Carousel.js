@@ -1,6 +1,8 @@
 import React from "react";
 import { Carousel, CarouselItem, CarouselIndicators } from "reactstrap";
 import Header from "./Header/Header";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
 function CarouselSection({ carousels }) {
   const [activeIndex, setActiveIndex] = React.useState(0);
@@ -64,7 +66,7 @@ function CarouselSection({ carousels }) {
               previous();
             }}
             role="button">
-            <i className="now-ui-icons arrows-1_minimal-left"></i>
+            <FontAwesomeIcon icon={faAngleLeft} size="2xl" />
           </a>
           <a
             className="carousel-control-next"
@@ -75,7 +77,7 @@ function CarouselSection({ carousels }) {
               next();
             }}
             role="button">
-            <i className="now-ui-icons arrows-1_minimal-right"></i>
+            <FontAwesomeIcon icon={faAngleRight} size="2xl" />
           </a>
         </Carousel>
       </div>
