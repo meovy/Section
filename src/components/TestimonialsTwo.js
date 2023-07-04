@@ -5,7 +5,7 @@ import olivia from '../img/olivia.2dcd9e1f.jpg';
 import '../style/Client.scss'
 
 const TestimonialsTwo = () => {
-    let [cards, setCards] = useState([
+    let [cards] = useState([
         {
             img: jame,
             name: 'Andrew John', job: 'Loan Counselor',
@@ -33,7 +33,7 @@ const TestimonialsTwo = () => {
                     return (
                         <div className="card">
                             <div className="card-img">
-                                <img src={card.img} />
+                                <img src={card.img} alt="card" />
                             </div>
                             <h3 className="card-title">{card.name}</h3>
                             <h6 className="card-job">{card.job}</h6>

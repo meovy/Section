@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import '../style/Alpha.scss';
 
 const Testimonials = () => {
-    let [users, setUsers] = useState([
+    let [users] = useState([
         {
             img: michael,
             describe: 'The networking at Web Summit is like no other European tech conference.',
@@ -44,7 +44,7 @@ const Testimonials = () => {
                             <div className="wrapper-card">
                                 <div className="card">
                                     <div className="card-img">
-                                        <img src={card.img} />
+                                        <img src={card.img} alt="card" />
                                     </div>
                                     <p className="card-describe">{card.describe}</p>
                                     <div className="card-icon">

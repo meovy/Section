@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMobile, faLocationDot, faUser, faT, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import "../style/Contact.scss";
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useState } from 'react';
 
@@ -15,8 +15,6 @@ const Contact = () => {
     let [lastNameError, setLastNameError] = useState(null)
     let [emailError, setEmailError] = useState(false)
     let [messageError, setMessageError] = useState('')
-    let [checkBoxError, setCheckBoxError] = useState(null)
-
     const handleChangefirstName = (e) => {
         const value = e.target.value;
         setFirstName(value)

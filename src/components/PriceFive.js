@@ -2,7 +2,7 @@ import { useState } from "react";
 import '../style/PriceFive.scss';
 
 const PriceFive = () => {
-    const [cards, setCards] = useState([
+    const [cards] = useState([
         {
             category: 'Plus',
             price: 100,

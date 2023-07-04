@@ -3,7 +3,7 @@ import { faHeadphonesSimple } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import '../style/PriceFour.scss'
 const PriceFour = () => {
-    const [cards, setData] = useState([
+    const [cards] = useState([
         {
             category: 'Starter',
             price: 10,

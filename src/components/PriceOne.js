@@ -5,7 +5,7 @@ import '../style/PriceOne.scss'
 
 const PriceOne = () => {
 
-    const [cardPrice, setCardPrice] = useState([
+    const [cardPrice] = useState([
         {
             category: 'Bravo Pack',
             price: '$10',

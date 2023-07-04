@@ -3,7 +3,7 @@ import '../style/PriceTwo.scss'
 
 const PriceTwo = () => {
 
-    const [Cards, setData] = useState([
+    const [Cards] = useState([
         {
             category: 'Enterprise',
             price: '$59',
